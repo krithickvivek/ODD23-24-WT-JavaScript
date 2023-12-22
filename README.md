@@ -1,4 +1,4 @@
-# ODD23-24-WT-JavaScript
+# Ex:09 JavaScript
 ### Name: Krithick Vivekananda
 ### Reg.No: 212223240075
 
