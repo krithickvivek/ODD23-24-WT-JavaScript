@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Factorial Calculator</title>
+</head>
+<body>
+
+ <h2>Factorial Calculator</h2>
+
+ <form>
+   <label for="number">Enter a Number:</label>
+   <input type="number" id="number" required>
+
+   <button type="button" onclick="calculateFactorial()">Compute Factorial</button>
+ </form>
+
+ <h3>Result:</h3>
+ <p id="result"></p>
+
+ <script>
+   function calculateFactorial() {
+     var number = parseInt(document.getElementById('number').value);
+
+     if (isNaN(number)) {
+       alert("Please enter a valid number.");
+       return;
+     }
+
+     var factorial = 1;
+     for (var i = 2; i <= number; i++) {
+       factorial *= i;
+     }
+
+     document.getElementById('result').innerHTML = "Factorial: " + factorial;
+   }
+ </script>
+
+</body>
+</html>
